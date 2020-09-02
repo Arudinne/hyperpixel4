@@ -3,7 +3,7 @@
 ORIENTATION=$1
 DEVICE="pointer:Goodix Capacitive TouchScreen"
 UDEV_FILE="/etc/udev/rules.d/98-hyperpixel4-calibration.rules"
-LIGHT_DM_FILE="etc/lightdm/lightdm.conf"
+LIGHT_DM_FILE="/etc/lightdm/lightdm.conf"
 DISP_FILE="/usr/share/dispsetup.sh"
 
 function set_matrix {
