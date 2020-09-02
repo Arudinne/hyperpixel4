@@ -10,6 +10,10 @@ OVERLAY_PATH="/boot/firmware/overlays"
 CONFIG="/boot/firmware/config.txt"
 
 CONFIG_LINES=(
+	"enable_uart=0"
+	"dtparam=audio=off"
+	"dtparam=i2c_arm=off"
+	"dtparam=spi=off"
 	"dtoverlay=hyperpixel4-common"
 	"dtoverlay=hyperpixel4-0x14"
 	"dtoverlay=hyperpixel4-0x5d"
