@@ -5,9 +5,9 @@ SERVICE_PATH="/etc/systemd/system"
 BINARY_NAME="hyperpixel4-init"
 ROTATE_NAME="hyperpixel4-rotate"
 BINARY_PATH="/usr/bin"
-OVERLAY_PATH="/boot/overlays"
+OVERLAY_PATH="/boot/firmware/overlays"
 
-CONFIG="/boot/config.txt"
+CONFIG="/boot/firmware/config.txt"
 
 CONFIG_LINES=(
 	"dtoverlay=hyperpixel4-common"
@@ -17,7 +17,7 @@ CONFIG_LINES=(
 	"dpi_group=2"
 	"dpi_mode=87"
 	"dpi_output_format=0x7f216"
-	"dpi_timings=480 0 10 16 59 800 0 15 113 15 0 0 0 60 0 32000000 6"
+	"hdmi_timings=480 0 10 16 59 800 0 15 113 15 0 0 0 60 0 32000000 6"
 )
 
 if [ $(id -u) -ne 0 ]; then
